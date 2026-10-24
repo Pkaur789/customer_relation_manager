@@ -1,0 +1,14 @@
+<main class="crm">
+  <h1>Customer Relation Manager</h1>
+  <%= render "navigation" %>
+
+  <h2>All Customers</h2>
+
+  <div class="customer-grid">
+    <%= render @customers %>
+  </div>
+
+  <% if @customers.empty? %>
+    <p>No customers found.</p>
+  <% end %>
+</main>
